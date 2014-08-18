@@ -1,7 +1,7 @@
 $(function(){
     var data = [{ 'hc-key': 'us-ma', value: 534.0 },
                     { 'hc-key': 'us-wa', value:  392.9  },
-                    { 'hc-key': 'us-ca', value:  1,708.1  },
+                    { 'hc-key': 'us-ca', value:  1708.1 },
                     { 'hc-key': 'us-or', value:  406.0  },
                     { 'hc-key': 'us-nv', value:  227.4  },
                     { 'hc-key': 'us-nm', value:  261.4  },
@@ -14,12 +14,12 @@ $(function(){
                     { 'hc-key': 'us-ok', value:  498.2  },
                     { 'hc-key': 'us-mo', value:  848.1  },
                     { 'hc-key': 'us-mi', value:  858.5  },
-                    { 'hc-key': 'us-il', value:  1,146.0  },
+                    { 'hc-key': 'us-il', value:  1146.0 },
                     { 'hc-key': 'us-in', value:  676.8  },
                     { 'hc-key': 'us-vt', value:  142.0  },
                     { 'hc-key': 'us-az', value:  515.3  },
                     { 'hc-key': 'us-ar', value:  262.4  },
-                    { 'hc-key': 'us-tx', value:  1,480.9  },
+                    { 'hc-key': 'us-tx', value:  1480.9 },
                     { 'hc-key': 'us-id', value:  260.5  },
                     { 'hc-key': 'us-ri', value:  140.9  },
                     { 'hc-key': 'us-al', value:  552.2  },
@@ -32,8 +32,8 @@ $(function(){
                     { 'hc-key': 'us-md', value:  306.3  },
                     { 'hc-key': 'us-de', value:  102.4  },
                     { 'hc-key': 'us-nj', value:  485.4  },
-                    { 'hc-key': 'us-pa', value:  1,009.1  },
-                    { 'hc-key': 'us-ny', value:  1,290.9  },
+                    { 'hc-key': 'us-pa', value:  1009.1 },
+                    { 'hc-key': 'us-ny', value:  1290.9 },
                     { 'hc-key': 'us-sd', value:  225.2  },
                     { 'hc-key': 'us-ct', value:  351.9  },
                     { 'hc-key': 'us-nh', value:  120.3  },
@@ -67,12 +67,12 @@ $(function(){
         colorAxis: {
                 min: 1,
                 type: 'logarithmic',
-                minColor: '#00ffff',
-                maxColor: '#003333',
+                minColor: '#FFFAFA',
+                maxColor: '#330000',
                 stops: [
-                    [0, '#FFF5EE'],
-                    [0.67, '#FF7F50'],
-                    [1, '#B13E0F']
+                    [0, '#FFFAFA'],
+                    [.67, '#9D1309'],
+                    [1, '#330000']
                 ]
             },
 
@@ -80,7 +80,7 @@ $(function(){
             data : data,
             mapData: Highcharts.maps['countries/us/us-all'],
             joinBy: 'hc-key',
-            name: 'Random data',
+            name: 'Federal Funding',
         states: {
                 hover: {
                     color: '#eeeeee',
